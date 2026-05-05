@@ -119,7 +119,154 @@ console.log(botoes);for (let i = 0; i < botoes.length; i++) {
     botoes[i].classList.add("ativo");
   };
 }for (let j = 0; j < botoes.length; j++) {
+  botoes[j].classList.remove("ativo");<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="conteudo-principal">
+      <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+      <div class="botoes">
+        <button class="botao">Cursos na Alura</button>
+        <button class="botao">Criar projetos em Javascript</button>
+        <button class="botao">Criar um portfolio</button>
+        <button class="botao">Atualizar o currículo</button>
+      </div>
+    </section>
+  </body>
+</html>
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
+
+:root {
+  --cor-de-fundo: #1e1e1e;
+  --verde: #6fff57;
+  --branco: #ffffff;
+  --botao-ativo: #3a375e;
+  --botao-inativo: rgba(58, 55, 94, 0.5);
+  --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco);
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.titulo-principal {
+  text-align: left;
+  width: 100%;
+  font-size: 32px;
+}
+
+.titulo-principal span {
+  color: var(--verde);
+}
+
+.botao {
+  font-family: "Crakra Petch", sans-serif;
+  background-color: var(--botao-inativo);
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-size: 18px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 4px solid var(--botao-ativo);
+  border-left: 2px solid var(--botao-ativo);
+  border-right: 2px solid var(--botao-ativo);
+  border-top: none;
+}
+
+.botao:first-child {
+  border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+  display: block;
+}@media screen and (min-width: 768px) {
+}@media screen and (min-width: 768px) {
+  .botoes {
+    display: flex;
+  }
+}@media screen and (min-width: 768px) {
+  /* Código omitido */
+
+  .botao:first-child {
+    border-radius: 40px 0 0 0;
+  }
+}@media screen and (min-width: 768px) {
+  /* Código omitido */
+
+  .botao:last-child {
+    border-radius: 0 40px 0 0;
+  }.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
+}v
+}
+<button class="botao ativo">Cursos na Alura</button>
+<button class="botao">Criar projetos em Javascript</button>
+<button class="botao">Criar um portfolio</button>
+<button class="botao">Atualizar meu currículo</button><button class="botao ativo">Cursos na Alura</button>
+<button class="botao">Criar projetos em Javascript</button>
+<button class="botao">Criar um portfolio</button>
+<button class="botao">Atualizar meu currículo</button><script src="main.js"></script>const botoes = document.querySelectorAll(".botao");
+console.log(botoes);for (let i = 0; i < botoes.length; i++) {
+  console.log(i);
+}botoes[i].onclick = function () {};botoes[i].onclick = function () {
+  botoes[i].classList.add("ativo");
+}for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    botoes[i].classList.add("ativo");
+  };
+}for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    botoes[i].classList.add("ativo");
+  };
+}for (let j = 0; j < botoes.length; j++) {
   botoes[j].classList.remove("ativo");
+}const botoes = document.querySelectorAll(".botao");
+
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    for (let j = 0; j < botoes.length; j++) {
+      botoes[j].classList.remove("ativo");
+    }
+
+    botoes[i].classList.add("ativo");
+  };
+}for ([inicialização]; [condição]; [incremento]) {
+  declaração;
+}for (var i = 1; i <= 5; i++) {
+  console.log(i);
+}for (var i = 0; i <= 10; i += 2) {
+  console.log(i);
+}var frutas = ["Maçã", "Banana", "Laranja", "Pera"];
+for (var i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}let contador = 5;
+contador += 3;
+let contador = 10;
+contador -= 4;var numero = 3;
+numero *= 2;var numero = 10;
+numero /= 2;
+
 }const botoes = document.querySelectorAll(".botao");
 
 for (let i = 0; i < botoes.length; i++) {
